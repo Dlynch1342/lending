@@ -1,0 +1,22 @@
+<h1>Name: <%= @borrower.first_name %></h1>
+
+<h1>Amount Needed:<%= @borrower.money_needed %></h1>
+<h1>Amount Raised:<%= @borrower.money_raised %></h1>
+
+
+<h2>List of peoplewho lent you money</h2>
+<table>
+	<tr>
+		<td>Name:</td>
+		<td><%= @lendder.first_name + ' ' + @lender.last_name%></td>
+       
+	</tr>
+	<tr>
+		<td>Email:</td>
+		<td><%= @lender.email %></td>
+	</tr>
+	<tr>
+		<td>Amount Lent:</td>
+		<td><%= @lendder.money %></td>
+	</tr>
+</table>

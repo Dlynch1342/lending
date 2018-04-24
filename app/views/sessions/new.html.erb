@@ -1,0 +1,71 @@
+
+
+<h1>Lender</h1>
+<form action="/lenders" method="post">
+    <input type='hidden' name='authenticity_token' value='<%= form_authenticity_token %>'>
+    <p>
+        <label>First Name:</label>
+        <input type="text" id="First Name" name = "lender[first_name]">
+    </p>
+    <p>
+        <label>Last Name:</label>
+        <input type="text" id="Last Name" name = "lender[last_name]">
+    </p>
+     <p>
+        <label>Email:</label>
+        <input type="text" id="Email" name = "lender[email]">
+    </p>
+    <p>
+       <label>Password:</label>
+        <input type="password" id="Password" name = "lender[password]">
+    </p>
+     <p>
+       <label>Password Confirmation:</label>
+        <input type="password" id="Password_Confirmation" name = "lender[password_confirmation]">
+    </p>
+    <p>
+       <label>Money:</label>
+        <input type="number" id="Money" name = "lender[money]">
+    </p>
+    <input type="submit" name="Register" value="Register">
+    <p>Already a member? <a href="/lenders/new"><small>Login Here</small></a></p>
+
+
+    <h1>Borrower</h1>
+    <form action="/borrowers" method="post">
+    <input type='hidden' name='authenticity_token' value='<%= form_authenticity_token %>'>
+    <p>
+        <label>First Name:</label>
+        <input type="text" id="First Name" name = "borrower[first_name]">
+    </p>
+    <p>
+        <label>Last Name:</label>
+        <input type="text" id="Last Name" name = "borrower[last_name]">
+    </p>
+     <p>
+        <label>Email:</label>
+        <input type="text" id="Email" name = "borrower[email]">
+    </p>
+    <p>
+       <label>Password:</label>
+        <input type="password" id="Password" name = "borrower[password]">
+    </p>
+     <p>
+       <label>Password Confirmation:</label>
+        <input type="password" id="Password_Confirmation" name = "borrower[password_confirmation]">
+    </p>
+    <p>
+       <label>Money For:</label>
+        <input type="text" id="Money For" name = "borrower[money_for]">
+    </p>
+    <p>
+       <label>Description:</label>
+        <input type="text" id="Description" name = "borrower[description]">
+    </p>
+    <p>
+       <label>Amount Needed:</label>
+        <input type="number" id="Amount Needed" name = "borrower[amount_needed]">
+    </p>
+    <input type="submit" name="Register" value="Register">
+
+    <p>Already a member? <a href="/borrowers/new"><small>Login Here</small></a></p>
